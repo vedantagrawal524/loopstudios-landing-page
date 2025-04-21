@@ -23,24 +23,36 @@
     id="page"
     class="relative flex min-h-screen min-w-screen flex-col bg-white text-base"
   >
-    <header class="hero-img h-[34rem] w-full bg-cover bg-fixed p-6">
+    <header
+      class="hero-img h-[34rem] w-full bg-black/35 bg-cover bg-fixed bg-right-top p-6 bg-blend-darken md:px-20 md:py-12 xl:px-36"
+    >
       <section class="flex h-full w-full flex-col">
         <nav class="flex flex-row items-center justify-between">
-          <a href="#" class="jus z-20 h-fit w-fit cursor-pointer">
-            <img class="h-auto w-32" src="/images/logo.svg" alt="Logo" />
+          <a href="#" class="h-fit w-fit cursor-pointer hover:opacity-60">
+            <img class="s:w-38 h-auto w-32" src="/images/logo.svg" alt="Logo" />
           </a>
 
-          <div class="hidden">
-            <a href="#about" class="hover-underline">About</a>
-            <a href="#careers" class="hover-underline">Careers</a>
-            <a href="#events" class="hover-underline">Events</a>
-            <a href="#products" class="hover-underline">Products</a>
-            <a href="#support" class="hover-underline">Support</a>
+          <div
+            class="font-josefin flex flex-row gap-5 text-[0.9rem] text-white max-md:hidden xl:gap-6 xl:text-[1rem]"
+          >
+            <a href="#about" class="hover-underline hover:opacity-60">About</a>
+            <a href="#careers" class="hover-underline hover:opacity-60"
+              >Careers</a
+            >
+            <a href="#events" class="hover-underline hover:opacity-60"
+              >Events</a
+            >
+            <a href="#products" class="hover-underline hover:opacity-60"
+              >Products</a
+            >
+            <a href="#support" class="hover-underline hover:opacity-60"
+              >Support</a
+            >
           </div>
 
           <div
             id="hamburger-button"
-            class="z-20 h-auto w-5 cursor-pointer transition-all duration-300 ease-linear"
+            class="s:w-7 h-auto w-5 cursor-pointer transition-all duration-300 ease-linear focus:opacity-60 md:hidden"
           >
             <img
               id="open-menu"
@@ -48,58 +60,82 @@
               src="/images/icon-hamburger.svg"
               alt="Open-Menu"
             />
-
-            <img
-              id="close-menu"
-              class="hidden"
-              src="/images/icon-close.svg"
-              alt="Close-Menu"
-            />
           </div>
         </nav>
 
         <h1
-          class="my-auto self-start border-2 border-white p-4 text-left text-[1.85rem] leading-8 font-[300] tracking-[0.16rem] text-white uppercase"
+          class="s:text-[2.2rem] s:p-4 my-auto self-start border-2 border-white p-4 text-left text-[1.85rem] leading-8 font-[300] tracking-[0.14rem] text-white uppercase md:px-10 md:text-[3.5rem] md:leading-14 xl:text-[4rem] xl:leading-16"
         >
-          <span class="block">Immersive</span>
-          <span class="block">experiences</span>
-          <span class="block">that deliver</span>
+          Immersive<br />
+          experiences<br />
+          that deliver<br />
         </h1>
       </section>
+
       <section
         id="mobile-menu"
-        class="fixed top-0 right-0 z-10 h-screen w-full translate-x-full transform bg-black transition-transform duration-400 ease-linear"
+        class="fixed top-0 right-0 z-10 h-screen w-full translate-x-full transform bg-black p-6 transition-transform duration-400 ease-linear"
       >
+        <div class="flex flex-row justify-between">
+          <a href="#" class="h-fit w-fit cursor-pointer">
+            <img class="s:w-38 h-auto w-32" src="/images/logo.svg" alt="Logo" />
+          </a>
+
+          <div
+            id="hamburger-button"
+            class="s:w-7 h-auto w-5 cursor-pointer transition-all duration-300 ease-linear focus:opacity-60"
+          >
+            <img
+              id="close-menu"
+              class=""
+              src="/images/icon-close.svg"
+              alt="Close-Menu"
+            />
+          </div>
+        </div>
         <nav
-          class="font-Alata mt-36 flex flex-col gap-2 p-6 text-left text-[1.4rem] font-thin tracking-[0.05rem] text-white uppercase"
+          class="font-Alata mt-28 flex flex-col gap-2 text-left text-[1.4rem] font-thin tracking-[0.05rem] text-white uppercase"
         >
-          <a href="#about">About</a>
-          <a href="#careers">Careers</a>
-          <a href="#events">Events</a>
-          <a href="#products">Products</a>
-          <a href="#support">Support</a>
+          <a href="#about" class="menu-links w-f focus:opacity-60">About</a>
+          <a href="#careers" class="menu-links w-fit focus:opacity-60"
+            >Careers</a
+          >
+          <a href="#events" class="menu-links w-fit focus:opacity-60">Events</a>
+          <a href="#products" class="menu-links w-fit focus:opacity-60"
+            >Products</a
+          >
+          <a href="#support" class="menu-links w-fit focus:opacity-60"
+            >Support</a
+          >
         </nav>
       </section>
     </header>
 
-    <main class="px-6 py-16">
-      <section id="about" class="">
+    <main class="mx-6 my-16 md:px-20 lg:my-32 xl:px-36">
+      <section id="about" class="flex flex-col min-[1350px]:mx-24 xl:relative">
         <picture class="h-auto w-full">
           <source
-            media="(min-width: 425px)"
+            media="(min-width: 768px)"
             srcset="/images/desktop/image-interactive.jpg"
           />
-          <img src="/images/mobile/image-interactive.jpg" alt="" />
+          <img
+            src="/images/mobile/image-interactive.jpg"
+            alt="VR"
+            class="place-self-center xl:place-self-start"
+          />
         </picture>
 
-        <div class="mt-10 flex flex-col gap-4">
+        <div
+          class="mt-10 flex flex-col gap-6 place-self-center md:gap-8 md:p-8 xl:absolute xl:top-[140px] xl:left-[550px] xl:h-[20rem] xl:w-[517px] xl:bg-white xl:p-[5rem] xl:text-left"
+        >
           <h2
-            class="font-alata text-center text-[1.7rem] leading-8 font-thin tracking-[0.14rem] text-black uppercase"
+            class="s:text-[2.2rem] text-center text-[1.7rem] leading-9 font-thin tracking-[0.14rem] text-black uppercase lg:text-[2.9rem] lg:leading-12 xl:text-left"
           >
-            The leader in interactive VR
+            The leader in<br />
+            interactive VR
           </h2>
           <p
-            class="font-josefin text-center text-[1rem] leading-6 font-[540] text-gray-600/95"
+            class="font-josefin text-center text-[0.9rem] leading-6 font-[540] text-gray-600/95 xl:text-left"
           >
             Founded in 2011, Loopstudios has been producing world-class virtual
             reality projects for some of the best companies around the globe.
@@ -109,41 +145,68 @@
         </div>
       </section>
 
-      <section id="products" class="mt-16 flex flex-col">
-        <h2
-          class="font-alata self-center text-center text-[1.7rem] tracking-[0.14rem] text-black uppercase"
-        >
-          Our creations
-        </h2>
-        <div class="mt-7 grid grid-cols-1 gap-y-6">
-          <div class="deep-earth-img creation-img">
+      <section id="products" class="mt-16 flex flex-col xl:mt-36">
+        <div class="flex flex-row items-center justify-between">
+          <h2
+            class="font-alata s:text-[2.2rem] self-center text-center text-[1.7rem] tracking-[0.14rem] text-black uppercase lg:self-start lg:text-[2.5rem]"
+          >
+            Our creations
+          </h2>
+          <button
+            class="font-josefin w-fit cursor-pointer self-center border-2 px-8 py-2 text-center text-[1.2rem] tracking-[0.15rem] text-black uppercase hover:bg-black hover:text-white hover:opacity-80 focus:bg-black focus:text-white max-md:hidden"
+          >
+            See all
+          </button>
+        </div>
+        <div class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-4 lg:mt-12">
+          <div
+            class="deep-earth-img creation-img md:h-[20rem] md:max-lg:text-[1.09rem]"
+          >
             Deep <br />
             earth
           </div>
-          <div class="night-arcade-img creation-img">
+          <div
+            class="night-arcade-img creation-img md:h-[20rem] md:max-lg:text-[1.09rem]"
+          >
             Night<br />
             arcade
           </div>
-          <div class="soccer-team-img creation-img">
+          <div
+            class="soccer-team-img creation-img md:h-[20rem] md:max-lg:text-[1.09rem]"
+          >
             Soccer<br />
             team VR
           </div>
-          <div class="grid-img creation-img">The <br />grid</div>
-          <div class="from-above-img creation-img">From up <br />above VR</div>
-          <div class="pocket-borealis-img creation-img">
+          <div
+            class="grid-img creation-img md:h-[20rem] md:max-lg:text-[1.09rem]"
+          >
+            The <br />grid
+          </div>
+          <div
+            class="from-above-img creation-img md:h-[20rem] md:max-lg:text-[1.09rem]"
+          >
+            From up <br />above VR
+          </div>
+          <div
+            class="pocket-borealis-img creation-img md:h-[20rem] md:max-lg:text-[1.09rem]"
+          >
             Pocket <br />borealis
           </div>
-          <div class="curiosity-img creation-img">
+          <div
+            class="curiosity-img creation-img md:h-[20rem] md:max-lg:text-[1.09rem]"
+          >
             The<br />
             curiosity
           </div>
-          <div class="fisheye-img creation-img">
+          <div
+            class="fisheye-img creation-img md:h-[20rem] md:max-lg:text-[1.09rem]"
+          >
             Make it<br />
             fisheye
           </div>
         </div>
         <button
-          class="font-josefin mt-8 w-fit cursor-pointer self-center border-2 px-8 py-2 text-center text-[1.2rem] tracking-[0.15rem] text-black uppercase hover:bg-black hover:text-white focus:bg-black focus:text-white"
+          class="font-josefin mt-8 w-fit cursor-pointer self-center border-2 px-8 py-2 text-center text-[1.2rem] tracking-[0.15rem] text-black uppercase hover:bg-black hover:text-white hover:opacity-80 focus:bg-black focus:text-white md:hidden"
         >
           See all
         </button>
@@ -151,44 +214,60 @@
     </main>
 
     <footer
-      class="font-josefin flex flex-col items-center justify-center gap-10 bg-black p-6"
+      class="font-josefin flex flex-col items-center justify-center gap-10 bg-black p-6 md:flex-row md:justify-between md:px-20 md:py-10 xl:px-36"
     >
-      <div class="flex flex-col items-center justify-center gap-7">
-        <a href="#" class="cursor-pointer">
-          <img class="h-auto w-36" src="/images/logo.svg" alt="Logo" />
+      <div
+        class="flex flex-col items-center justify-center gap-7 md:items-start"
+      >
+        <a href="#" class="cursor-pointer hover:opacity-60">
+          <img class="h-auto w-34" src="/images/logo.svg" alt="Logo" />
         </a>
 
         <div
-          class="flex flex-col items-center justify-center gap-3 text-[1.15rem] font-thin tracking-[0.02rem] text-white"
+          class="flex flex-col items-center justify-center gap-3 text-[0.8rem] font-thin tracking-[0.02rem] text-white md:flex-row md:items-start"
         >
-          <a href="#about" class="hover-underline">About</a>
-          <a href="#careers" class="hover-underline">Careers</a>
-          <a href="#events" class="hover-underline">Events</a>
-          <a href="#products" class="hover-underline">Products</a>
-          <a href="#support" class="hover-underline">Support</a>
+          <a href="#about" class="hover-underline hover:opacity-60">About</a>
+          <a href="#careers" class="hover-underline hover:opacity-60"
+            >Careers</a
+          >
+          <a href="#events" class="hover-underline hover:opacity-60">Events</a>
+          <a href="#products" class="hover-underline hover:opacity-60"
+            >Products</a
+          >
+          <a href="#support" class="hover-underline hover:opacity-60"
+            >Support</a
+          >
         </div>
       </div>
 
-      <div class="flex flex-col items-center justify-center gap-7">
+      <div class="flex flex-col items-center justify-center gap-7 md:items-end">
         <div class="flex flex-row gap-5">
-          <a href="" class="hover-underline after:bottom-[-20%]"
+          <a
+            href="https://www.facebook.com/"
+            class="hover-underline h-auto w-5 after:bottom-[-20%] hover:opacity-60"
             ><img src="/images/icon-facebook.svg" alt="FaceBook"
           /></a>
 
-          <a href="" class="hover-underline after:bottom-[-20%]"
-            ><img src="/images/icon-twitter.svg" alt="X"
+          <a
+            href="https://x.com/home"
+            class="hover-underline h-auto w-5 after:bottom-[-20%] hover:opacity-60"
+            ><img src="/images/icon-x.svg" alt="X"
           /></a>
 
-          <a href="" class="hover-underline after:bottom-[-20%]"
-            ><img src="/images/icon-pinterest.svg" alt="Pinterest"
+          <a
+            href="https://pinterest.com/"
+            class="hover-underline h-auto w-5 after:bottom-[-20%] hover:opacity-60"
+            ><img src="/images/icon-pinterest.svg" alt="Pinterest h-auto w-5"
           /></a>
 
-          <a href="" class="hover-underline after:bottom-[-20%]"
+          <a
+            href="https://www.instagram.com/"
+            class="hover-underline h-auto w-5 after:bottom-[-20%] hover:opacity-60"
             ><img src="/images/icon-instagram.svg" alt="Instagram"
           /></a>
         </div>
         <p
-          class="items-center justify-center self-center text-center text-[1rem] font-thin tracking-[0.04rem] text-gray-400"
+          class="items-center justify-center self-center text-center text-[0.7rem] font-thin tracking-[0.04rem] text-gray-400"
         >
           &copy; <span id="year"></span> Loopstudios. All rights reserved.
         </p>
