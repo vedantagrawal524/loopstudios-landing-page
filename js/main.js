@@ -1,5 +1,5 @@
 // DOM Elements
-const hamburger_button = document.querySelectorAll('#hamburger-button');
+const hamburger_button = document.querySelectorAll('.hamburger-button');
 const mobile_menu = document.querySelector('#mobile-menu');
 const menu_links = document.querySelectorAll('.menu-links');
 
