@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+@theme {
+    --font-Josefin: "Josefin Sans", sans-serif;
+    --font-Alata: "Alata", sans-serif;
+}
+
+@layer components{
+    .hero-img{
+        background-image: url('/build/images/mobile/image-hero.jpg');
+    }
+
+    .deep-earth-img{
+        background-image: url('/build/images/mobile/image-deep-earth.jpg');
+    }
+    .night-arcade-img{
+        background-image: url('/build/images/mobile/image-night-arcade.jpg');
+    }
+    .soccer-team-img{
+        background-image: url('/build/images/mobile/image-soccer-team.jpg');
+    }
+    .grid-img{
+        background-image: url('/build/images/mobile/image-grid.jpg');
+    }
+    .from-above-img{
+        background-image: url('/build/images/mobile/image-from-above.jpg');
+    }
+    .pocket-borealis-img{
+        background-image: url('/build/images/mobile/image-pocket-borealis.jpg');
+    }
+    .curiosity-img{
+        background-image: url('/build/images/mobile/image-curiosity.jpg');
+    }
+    .fisheye-img{
+        background-image: url('/build/images/mobile/image-fisheye.jpg');
+    }
+}
