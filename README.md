@@ -34,7 +34,7 @@ Users should be able to:
 
 #### 📱 Mobile
 
-![Mobile](./design/mobile-design.jpg.jpg)
+![Mobile](./design/mobile-design.jpg)
 
 ---
 
