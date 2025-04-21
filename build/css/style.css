@@ -16,7 +16,6 @@
     --text-base--line-height: calc(1.5 / 1);
     --font-weight-thin: 100;
     --font-weight-normal: 400;
-    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -219,9 +218,6 @@
   .hidden {
     display: none;
   }
-  .table {
-    display: table;
-  }
   .h-\[34rem\] {
     height: 34rem;
   }
@@ -258,9 +254,6 @@
   .min-w-screen {
     min-width: 100vw;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .translate-x-full {
     --tw-translate-x: 100%;
     translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -270,9 +263,6 @@
   }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -324,10 +314,6 @@
   }
   .scroll-smooth {
     scroll-behavior: smooth;
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
   }
   .border-2 {
     border-style: var(--tw-border-style);
@@ -450,9 +436,6 @@
   .text-gray-400 {
     color: var(--color-gray-400);
   }
-  .text-gray-600 {
-    color: var(--color-gray-600);
-  }
   .text-gray-600\/95 {
     color: color-mix(in srgb, oklch(44.6% 0.03 256.802) 95%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -464,13 +447,6 @@
   }
   .uppercase {
     text-transform: uppercase;
-  }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .transition-all {
     transition-property: all;
@@ -489,14 +465,6 @@
   .duration-400 {
     --tw-duration: 400ms;
     transition-duration: 400ms;
-  }
-  .duration-500 {
-    --tw-duration: 500ms;
-    transition-duration: 500ms;
-  }
-  .ease-in-out {
-    --tw-ease: var(--ease-in-out);
-    transition-timing-function: var(--ease-in-out);
   }
   .ease-linear {
     --tw-ease: linear;
@@ -640,31 +608,31 @@
     }
   }
   .hero-img {
-    background-image: url("/build/images/mobile/image-hero.jpg");
+    background-image: url("/images/mobile/image-hero.jpg");
   }
   .deep-earth-img {
-    background-image: url("/build/images/mobile/image-deep-earth.jpg");
+    background-image: url("/images/mobile/image-deep-earth.jpg");
   }
   .night-arcade-img {
-    background-image: url("/build/images/mobile/image-night-arcade.jpg");
+    background-image: url("/images/mobile/image-night-arcade.jpg");
   }
   .soccer-team-img {
-    background-image: url("/build/images/mobile/image-soccer-team.jpg");
+    background-image: url("/images/mobile/image-soccer-team.jpg");
   }
   .grid-img {
-    background-image: url("/build/images/mobile/image-grid.jpg");
+    background-image: url("/images/mobile/image-grid.jpg");
   }
   .from-above-img {
-    background-image: url("/build/images/mobile/image-from-above.jpg");
+    background-image: url("/images/mobile/image-from-above.jpg");
   }
   .pocket-borealis-img {
-    background-image: url("/build/images/mobile/image-pocket-borealis.jpg");
+    background-image: url("/images/mobile/image-pocket-borealis.jpg");
   }
   .curiosity-img {
-    background-image: url("/build/images/mobile/image-curiosity.jpg");
+    background-image: url("/images/mobile/image-curiosity.jpg");
   }
   .fisheye-img {
-    background-image: url("/build/images/mobile/image-fisheye.jpg");
+    background-image: url("/images/mobile/image-fisheye.jpg");
   }
 }
 @property --tw-translate-x {
@@ -719,11 +687,6 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-duration {
   syntax: "*";
   inherits: false;
@@ -752,7 +715,6 @@
       --tw-leading: initial;
       --tw-font-weight: initial;
       --tw-tracking: initial;
-      --tw-outline-style: solid;
       --tw-duration: initial;
       --tw-ease: initial;
       --tw-content: "";
